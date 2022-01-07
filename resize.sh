@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ## Program utilties
-set -x
 
 RED="$(printf '\033[31m')"
 exit_on_signal_SIGINT() {
