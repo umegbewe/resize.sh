@@ -23,7 +23,7 @@ reset_color() {
 ## main logic
 read -p "Size to resize to: " SIZE
 
-EC2_INSTANCE_ID=$(curl http://169.254.169.254/latest/meta-data/instance-id)
+EC2_INSTANCE_ID=$(cat /var/lib/cloud/data/instance-id || curl http://169.254.169.254/latest/meta-data/instance-id)
 
 VOLUME_ID=$(aws ec2 describe-instances --output text --instance-id $EC2_INSTANCE_ID \
   --query "Reservations[0].Instances[0].BlockDeviceMappings[0].Ebs.VolumeId")
