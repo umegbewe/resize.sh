@@ -46,6 +46,4 @@ You inputed a size smaller than the current size of the EBS Volume
 SIZE only takes integer values, please input accordingly in GiBs E.g 10, 20, 30 etc 
 
 
-I found a bug or something not working right? Please submit a pull request or reach to me via mail nwebedujunior55 at gmail dot com
-    
-    
+I found a bug or something not working right? Please submit a pull request or open an issue
